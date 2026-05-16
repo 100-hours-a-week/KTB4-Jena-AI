@@ -10,5 +10,5 @@
 
 ### How to use
 - open_ktb 입력 : 디폴트 웹사이트(3) 실행
-- open_ktb <notion> <git100> 입력 : 선택 웹사이트 추가 실행
+- open_ktb notion git100 입력 : 선택 웹사이트 추가 실행
 - 총 실행된 웹사이트 개수 만큼 print 출력 : "Kakao Bootcamp {num} website is opening ..."
