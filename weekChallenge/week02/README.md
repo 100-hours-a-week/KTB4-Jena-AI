@@ -1,17 +1,20 @@
 # Week 02-2. Community Sevice - Backend 구현
----
+
 
 ## 1. HTTP REST API 설계 및 구현
 - 커뮤니티 서비스 백엔드 구현
 
+
 ## 2. AI 모델 서빙
 - Ollama 프로그램을 통한 게시글 요약 기능 추가
+
 
 ## 3. 데이터베이스 적용하기
 - 데이터 베이스 적용 실패... -> fake database 리스트로 작성하여 구현
 
-## 4. 구조 개선하기(예: Route - Controller - Model 패턴을 적용)
 
+## 4. 구조 개선하기(예: Route - Controller - Model 패턴을 적용)
+```
 Week02
 ├── main.py
 │
@@ -21,7 +24,7 @@ Week02
     ├── post_router.py
     ├── comment_router.py
     └── llm_router.py
-
+```
 
 ## 5. (선택) HTML/CSS/S나 스트림릿으로 프론트엔드 만들기
 - 불가
