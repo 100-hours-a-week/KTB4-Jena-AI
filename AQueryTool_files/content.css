@@ -1,0 +1,112 @@
+@charset "utf-8";
+
+/* ------ 공통 ------ */
+/* sub_tit */
+.vizen_sub_tit{margin-bottom:60px; text-align:center;}
+.vizen_sub_tit h3{font-size:64px; color:#222; letter-spacing:-0.04em; font-weight:800; line-height:1.2; margin:0;}
+
+.vizen_sub_tit02{margin-bottom:15px;}
+.vizen_sub_tit02 h4{font-size:30px; color:#222; letter-spacing:-0.045em; font-weight:800; line-height:1.4; margin:0;}
+/* table_layout */
+.vizen_table_layout01 table{width:100%; border-top:2px solid #444; background:#fff;}
+.vizen_table_layout01 table thead th{font-size:20px; color:#222; letter-spacing:-0.045em; font-weight:700; line-height:1.6; padding:10px 5px; border-bottom:1px solid #ededed;}
+.vizen_table_layout01 table tbody tr.on{background:#eff8ff;}
+.vizen_table_layout01 table tbody td{font-size:18px; color:#666; letter-spacing:-0.045em; font-weight:700; line-height:1.6; padding:10px 5px; text-align:center; border-bottom:1px solid #ccc;}
+.vizen_table_layout01.vizen_table_limit table tbody tr:not(:first-of-type){display:none;}
+.vizen_table_layout01.vizen_table_limit table tbody tr.vizen_table_show{display:table-row;}
+
+.vizen_table_layout02 table{width:100%; border-top:2px solid #444; border-bottom:1px solid #ccc;}
+.vizen_table_layout02 table thead th{font-size:20px; color:#222; letter-spacing:-0.045em; font-weight:700; line-height:1.6; padding:10px 5px; border-bottom:1px solid #ccc; border-right:1px solid #ededed;}
+.vizen_table_layout02 table thead th:last-of-type{border-right:0;}
+.vizen_table_layout02 table thead th p{font-size:22px; font-weight:800;}
+.vizen_table_layout02 table thead th p.vizen_col01{color:#06b5a5;}
+.vizen_table_layout02 table thead th p.vizen_col02{color:#1687f0;}
+.vizen_table_layout02 table tbody tr.vizen_on{background:#eff8ff;}
+.vizen_table_layout02 table tbody td{font-size:18px; color:#666; letter-spacing:-0.045em; font-weight:700; line-height:1.6; padding:10px 5px; text-align:center; border-right:1px solid #ededed;}
+.vizen_table_layout02 table tbody td:last-of-type{border-right:0;}
+.vizen_table_layout02 table tbody td p.vizen_col01{font-size:20px; color:#959595; }
+.vizen_table_layout02 table tbody td p b{font-size:38px; color:#444; font-weight:800; line-height:1;}
+.vizen_table_layout02 table tbody td span{display:block; font-size:16px; color:#7b7b7b; letter-spacing:-0.045em; font-weight:400; margin-top:5px;}
+.vizen_table_layout02 table tbody td a{display:inline-block; width:100%; max-width:130px; font-size:18px; color:#666; letter-spacing:0em; font-weight:700; border:2px solid #1687f0; text-align:center; box-sizing:border-box; border-radius:6px; margin-top:15px; padding:3px;}
+.vizen_table_layout02 table tbody td i{display:inline-block; width:17px; height:17px; border:4px solid #1687f0; border-radius:50%; box-sizing:border-box;}
+.vizen_table_layout02 table tbody td a:hover{background:#1687f0; color:#fff;}
+
+.vizen_bot_btns{margin-top:15px; font-size:0; letter-spacing:-4px;}
+.vizen_bot_btns:after{content:''; display:block; clear:both;}
+.vizen_bot_btns .vizen_fl{float:left;}
+.vizen_bot_btns .vizen_fr{float:right;}
+.vizen_bot_btns a{display:inline-block; width:150px; font-size:18px; color:#444; letter-spacing:0em; font-weight:400; line-height:1.2; padding:7px 0; border:2px solid #1687f0; border-radius:6px; box-sizing:border-box; text-align:center; margin-right:5px;}
+.vizen_bot_btns a:last-of-type{margin-right:0;}
+.vizen_bot_btns a.vizen_type02{color:#fff; background:#1687f0;}
+.vizen_bot_btns a.vizen_gray{border-color:#444;}
+/* check_custom */
+.vizen_check_custom label input{display:none; font-size:0; padding:0; margin:0; border:0; width:0; height:0; opacity:0; visibility:hidden;}
+.vizen_check_custom label i{position:relative; display:inline-block; vertical-align:top; width:20px; height:20px; border:2px solid #666; border-radius:50%; box-sizing:border-box; margin:5px 10px 5px 0;}
+.vizen_check_custom label span{display:inline-block; vertical-align:top; font-size:20px; color:#666; letter-spacing:-0.045em; font-weight:700; line-height:1.6; }
+.vizen_check_custom label input:checked + i{border-color:#1687f0;}
+.vizen_check_custom label input:checked + i:before{content:''; position:absolute; top:calc(50% - 5px); left:calc(50% - 5px); display:block; width:10px; height:10px; background:#1687f0; border-radius:50%; }
+
+.vizen_check_custom02 label input{display:none; font-size:0; padding:0; margin:0; border:0; width:0; height:0; opacity:0; visibility:hidden;}
+.vizen_check_custom02 label i{display:inline-block; vertical-align:top; width:20px; height:20px; background:url('/img/checkbox_off.png') no-repeat center center / contain; margin:2px 10px 2px 0;}
+.vizen_check_custom02 label span{display:inline-block; vertical-align:top; font-size:16px; color:#444; letter-spacing:-0.045em; font-weight:bold; line-height:1.6; }
+.vizen_check_custom02 label input:checked + i{background-image:url('/img/checkbox_on.png');}
+
+.vizen_check_custom03 label input{display:none; font-size:0; padding:0; margin:0; border:0; width:0; height:0; opacity:0; visibility:hidden;}
+.vizen_check_custom03 label i{display:inline-block; vertical-align:top; width:12px; height:12px; background:url('/img/checkbox02_off.png') no-repeat center center / contain; margin:6px 7px 6px 0;}
+.vizen_check_custom03 label span{display:inline-block; vertical-align:top; font-size:15px; color:#838383; letter-spacing:-0.045em; font-weight:400; line-height:1.6; }
+.vizen_check_custom03 label input:checked + i{background-image:url('/img/checkbox02_on.png');}
+
+.vizen_check_custom04 label input{display:none; font-size:0; padding:0; margin:0; border:0; width:0; height:0; opacity:0; visibility:hidden;}
+.vizen_check_custom04 label i{display:inline-block; vertical-align:top; width:12px; height:12px; background:url('/img/checkbox03_off.png') no-repeat center center / contain; margin:6px 7px 6px 0;}
+.vizen_check_custom04 label span{display:inline-block; vertical-align:top; font-size:15px; color:#1687f0; letter-spacing:-0.045em; font-weight:400; line-height:1.6; }
+.vizen_check_custom04 label input:checked + i{background-image:url('/img/checkbox03_on.png');}
+
+
+/* ------ PRICING ------ */
+.vizen_payment_con01{padding:80px 0; }
+.vizen_payment_con01 .vizen_sub_tit02{margin-top:30px;}
+.vizen_payment_con01 .vizen_desc{margin-top:15px;}
+.vizen_payment_con01 .vizen_desc p{font-size:16px; color:#989898; letter-spacing:-0.045em; font-weight:400; line-height:1.6; }
+.vizen_payment_con01 .vizen_table_layout01 table tbody tr{cursor:pointer;}
+.vizen_payment_con01 .vizen_payment_box{padding-top:40px; margin-top:40px; border-top: 1px solid #999}
+.vizen_payment_con01 .vizen_payment_box .vizen_sub_tit02{margin-top:0;}
+.vizen_payment_con01 .vizen_payment_box ul{font-size:0; letter-spacing:-4px;}
+.vizen_payment_con01 .vizen_payment_box ul li{display:inline-block; vertical-align:top; margin-right:30px;}
+.vizen_payment_con01 .vizen_payment_box a{display:inline-block; vertical-align:middle; width:120px; font-size:16px; color:#999; letter-spacing:0em; font-weight:400; line-height:1.4; text-align:center; padding:9px 0; background:#e9e9e9; border-radius:5px;}
+
+
+.vizen_payment_pay_con01{padding-top:80px }
+.vizen_payment_pay_con01 .vizen_sub_tit02{margin-top:30px;}
+.vizen_payment_pay_con01 .vizen_desc{margin-top:10px;}
+.vizen_payment_pay_con01 .vizen_desc p{font-size:16px; color:#989898; letter-spacing:-0.045em; font-weight:400; line-height:1.6; }
+.vizen_payment_pay_con01 .vizen_table_layout01 table tbody tr{cursor:pointer;}
+
+.vizen_payment_pay_con02{padding-bottom:100px; font-size:0; letter-spacing:-4px;}
+
+.vizen_payment_pay_con02 .vizen_sub_tit02{margin-top:40px;}
+.vizen_payment_pay_con02 .vizen_payment_box{padding-top:40px; margin-top:40px; border-top: 1px solid #999}
+.vizen_payment_pay_con02 .vizen_payment_box .vizen_sub_tit02{margin-top:0}
+.vizen_payment_pay_con02 .vizen_payment_box ul{font-size:0; letter-spacing:-4px;}
+.vizen_payment_pay_con02 .vizen_payment_box ul li{display:inline-block; vertical-align:top; margin-right:30px;}
+.vizen_payment_pay_con02 .vizen_payment_box a{display:inline-block; vertical-align:middle; width:120px; font-size:16px; color:#999; letter-spacing:0em; font-weight:400; line-height:1.4; text-align:center; padding:9px 0; background:#e9e9e9; border-radius:5px;}
+.vizen_payment_pay_con02 .vizen_left_box ul{display:inline-block; vertical-align:middle;}
+.vizen_payment_pay_con02 .vizen_left_box ul li{display:inline-block; vertical-align:top; margin-right:30px;}
+.vizen_payment_pay_con02 .vizen_left_box a{display:inline-block; vertical-align:middle; width:120px; font-size:18px; color:#ffffff; letter-spacing:0em; font-weight:400; line-height:1.2; text-align:center; padding:7px 0; background:#1687f0; border-radius:5px;}
+.vizen_payment_pay_con02 .vizen_right_box{display:block; width:60%; }
+.vizen_payment_pay_con02 .vizen_right_box ul li{display:inline-block; vertical-align:top; width:50%;}
+.vizen_payment_pay_con02 .vizen_right_box ul li .vizen_input_box{position:relative; display:inline-block; vertical-align:middle; width:163px; margin-right:10px; text-align:center; background:#fff; border:2px solid #e6e6e6; border-radius:5px; box-sizing:border-box; font-size:0; letter-spacing:-4px;}
+.vizen_payment_pay_con02 .vizen_right_box ul li .vizen_input_box input{display:inline-block; vertical-align:middle; width:calc(100% - 82px); font-size:18px; color:#666; letter-spacing:-0.045em; font-weight:700; line-height:1.4; border:0; border-left:2px solid #e6e6e6; border-right:2px solid #e6e6e6; box-sizing:border-box; text-align:center; padding:8px 0;}
+.vizen_payment_pay_con02 .vizen_right_box ul li .vizen_input_box a{display:inline-block; vertical-align:middle; width:41px; text-align:center;}
+.vizen_payment_pay_con02 .vizen_right_box ul li span{display:inline-block; vertical-align:middle; font-size:18px; color:#666; letter-spacing:-0.045em; font-weight:700; line-height:1.6;}
+.vizen_payment_pay_con02 .vizen_inner > .vizen_sub_tit02{margin-top:40px;}
+.vizen_payment_pay_con02 .vizen_bot_text{margin:30px 0;}
+.vizen_payment_pay_con02 .vizen_bot_text:after{content:''; display:block; clear:both;}
+.vizen_payment_pay_con02 .vizen_bot_text .vizen_check_custom02{display:inline-block; margin:10px 0;}
+.vizen_payment_pay_con02 .vizen_bot_text .vizen_price_box{margin-bottom:20px;}
+.vizen_payment_pay_con02 .vizen_bot_text .vizen_price_box span{display:inline-block; vertical-align:middle; font-size:22px; color:#1687f0; letter-spacing:-0.045em; font-weight:700; line-height:1.6; margin-right:40px;}
+.vizen_payment_pay_con02 .vizen_bot_text .vizen_price_box p{display:inline-block; vertical-align:middle; font-size:18px; color:#1687f0; letter-spacing:-0.045em; font-weight:700; line-height:1.6; }
+.vizen_payment_pay_con02 .vizen_bot_text .vizen_price_box p b{font-size:38px; font-weight:800; line-height:1;}
+
+.vizen_input_box{position:relative; display:inline-block; vertical-align:middle; width:163px; margin-right:10px; text-align:center; background:#fff; border:2px solid #e6e6e6; border-radius:5px; box-sizing:border-box; font-size:0; letter-spacing:-4px;}
+.vizen_input_box input{display:inline-block; vertical-align:middle; width:calc(100% - 82px); font-size:14px; color:#666; letter-spacing:-0.045em; font-weight:700; line-height:1.4; border:0; border-left:2px solid #e6e6e6; border-right:2px solid #e6e6e6; box-sizing:border-box; text-align:center; padding:6px 0;}
+.vizen_input_box a{display:inline-block; vertical-align:middle; width:41px; text-align:center;}

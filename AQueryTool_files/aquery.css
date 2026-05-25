@@ -1,0 +1,1028 @@
+﻿@charset "utf-8";
+
+footer
+    {
+        position: relative;
+        clear: both;
+        height: 40px;
+    }
+
+.table-outline {
+border-bottom: 2px solid #00a6cd!important;
+border-left: 2px solid #00a6cd;
+border-right: 2px solid #00a6cd;
+border-top: 2px solid #00a6cd!important;
+background-color: #f4f4f4;
+border-radius:5px;
+}
+
+.table-input {
+   font-size:12px;   
+}
+
+.table-backgournd
+{
+    /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#f6f6f6+0,eaeaea+100,207cca+100,7db9e8+100 */
+    background: #f6f6f6; /* Old browsers */
+    background: -moz-linear-gradient(top,  #f6f6f6 0%, #eaeaea 100%, #207cca 100%, #7db9e8 100%); /* FF3.6-15 */
+    background: -webkit-linear-gradient(top,  #f6f6f6 0%,#eaeaea 100%,#207cca 100%,#7db9e8 100%); /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(to bottom,  #f6f6f6 0%,#eaeaea 100%,#207cca 100%,#7db9e8 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+}
+
+/*tr 하단에만 선이 있고 마지막 tr은 선이 없는 테이블 스타일*/
+.table-tr-bottom-line > tbody > tr {
+    border-bottom: 1px solid #f4f4f4;
+}
+.table-tr-bottom-line > tbody > tr:last-child {
+    border: none;
+}
+
+
+.memo-backgournd {
+    background-color: white;
+} 
+
+/*테이블 박스 스타일*/
+.box 
+{
+    border-top:1px solid lightgray; border-right:0; border-bottom:0; border-left:1px solid lightgray;
+} 
+
+.table-comment-box
+{
+    border-right:1px solid lightgray; border-top:1px solid lightgray; border-bottom:0; border-left:1px solid lightgray;
+} 
+
+/*메모 박스 스타일*/
+.memo-box
+{
+    display: block;
+    position:absolute;
+    height:auto;
+    bottom:0;
+    top:0;
+    left:0;
+    right:0;
+    margin-top:30px;
+    margin-bottom:0px;
+    margin-right:0px;
+    margin-left:0px;
+} 
+
+.index-box 
+{
+    border:1px solid lightgray; display: inline-block;
+}
+
+.string-input {
+    background-color: white;
+    text-align: left;
+    border: 1px solid #767676;
+    border-radius: 0px;
+    overflow-y: auto;
+    width: 100%;
+    height: 100%;
+}
+
+/* box class가 적용된 자식 div의 자식 div에 적용할 스타일 */
+.box > div > div > div 
+{
+    border-right:1px solid lightgray; border-bottom:1px solid lightgray; border-left:0; border-top:0; 
+} 
+
+/* 사전용 선 스타일 */
+.dic-box
+{
+    border-top:1px solid lightgray; border-right:0; border-bottom:0; border-left:1px solid lightgray;
+} 
+
+.dic-box > div > div > div > div
+{
+    border-right:1px solid lightgray; border-bottom:1px solid lightgray; border-left:0; border-top:0; 
+} 
+
+
+.index-box > div > div 
+{
+    border-right:1px solid lightgray; border-bottom:1px solid lightgray; border-left:0; border-top:0; 
+} 
+
+.index-box > div > div:last-child
+{
+    border-right:0; border-bottom:1px solid lightgray; border-left:0; border-top:0; 
+} 
+
+/* all column 보기 스타일 */
+/*.box > div > div
+{
+    border-right:1px solid lightgray; border-bottom:1px solid lightgray; border-left:0; border-top:0; 
+}*/ 
+
+/* 컬럼 드래그할 때만 잠깐 적용될 왼쪽, 위쪽 선 */
+.column-drag
+{
+    border-top:1px solid lightgray; border-left:1px solid lightgray;margin-top:-1px;margin-left:-1px;
+} 
+
+.status-droppable {
+    margin-top:-1px;margin-left:-1px;border: 1px solid #FFA500;
+}
+
+.status-droppable-word-dic {
+    border: 1px solid #FFA500;
+}
+
+.status-droppable-name-dic {
+    border: 1px solid #FFA500;
+}
+
+.status-droppable-type-dic {
+    border: 1px solid #FFA500;
+}
+
+/*Join 라인에 마우스 오버시 해당 컬럼 표시*/
+.status-join-column {
+    margin-top: -4px;
+    margin-left: -4px;
+    border-left: 2px solid #5EAEC9;
+    border-top: 2px solid #5EAEC9;
+    border-right: 2px solid #5EAEC9;
+    border-bottom: 2px solid #5EAEC9;
+}
+
+.column-hide {
+    visibility:hidden;
+}
+
+.selected_table {
+    border: 3px solid #FFA500;
+    margin-left:-3px;
+    margin-top:-3px;
+}
+
+.selected_table_for_drag {
+    background-color: #FFA500;
+    border: 3px solid #FFA500;
+    margin-left:-3px;
+    margin-top:-3px;
+}
+
+
+.div-table-header-cell
+{
+    font-size:11px;height:28px;line-height:28px;text-align:center;
+} 
+
+.div-table-content-cell
+{
+    height:28px;line-height:28px;text-align:center;padding:0px;
+} 
+
+.div-table-cell-input-text
+{
+    width:100%;
+    border: none;
+    border-color: transparent;
+} 
+
+.div-table-cell-input-text2
+{
+    width:calc(100% - 14px);
+    border: none;
+    border-color: transparent;
+} 
+
+
+/* input text 스타일에 테두리가 직각인 디자인 추가  */
+input[type=text]{
+    border-radius:0px;
+}
+
+.underline-input-text
+{
+    height:25px;
+    text-decoration: underline; 
+}
+
+.table-title-font-color {
+    color:#6a9ca7;
+}
+
+.input-xs {
+    height: 22px;
+    padding: 2px 5px;
+    font-size: 12px;
+    line-height: 1.5;
+    border-radius: 3px;
+}
+
+/*ERD 로드 후 좌측 상단 ERD 기본 정보*/
+.erd-title-color {
+    color: #515151;
+    cursor: pointer;
+}
+
+.erd-title-color:hover {
+    color: #c6c6c6;
+    cursor: pointer;
+}
+
+.icon-color {
+    color:#6a9ca7;
+}
+.icon-color:hover {
+    color:#52ceeb;
+}
+
+.delete-dic-icon-color {
+    color: #D7E4E8;
+}
+
+.delete-dic-icon-color:hover {
+    color: #52ceeb;
+}
+
+
+/*텍스트를 아이콘 처럼 쓰는 경우 스타일. 외곽 테두리 없음*/
+.text-icon {
+    font-size: 13px;
+    text-align: center;
+    letter-spacing: -1px;
+    font-weight: bold;
+    padding: 0px 1px 0px 1px;
+}
+
+/*텍스트를 아이콘 처럼 쓰는 경우 스타일. 외곽 테두리 있음*/
+.text-border-icon {
+    font-size: 12px;
+    width: 20px;
+    text-align: center;
+    letter-spacing: -1px;
+    font-weight: bold;
+    border-style: solid;
+    padding: 0px 1px 0px 1px;
+    border-width: 1px;
+    border-radius: 5px;
+}
+
+.icon-type-dic {
+    color:#7092BE;
+}
+.icon-type-dic:hover {
+    color:#86aee1;
+}
+
+.word-dic-icon-color {
+    color:#628066;
+}
+.word-dic-icon-color:hover {
+    color:#90b094;
+}
+
+.name-dic-icon-color {
+    color:#A3C97B;
+}
+.name-dic-icon-color:hover {
+    color:#b5dc8b;
+}
+
+.type-dic-underline-for-resize {
+    cursor:ns-resize; border-bottom: 5px solid #7092BE;
+}
+
+.word-dic-underline-for-resize {
+    cursor:ns-resize; border-bottom: 5px solid #628066;
+}
+
+.name-dic-underline-for-resize {
+    cursor:ns-resize; border-bottom: 5px solid #A3C97B;
+}
+
+/* 타입 사전을 참조하는 텍스트박스 */
+/*.ref-type-dic-input {
+    background-color:#7092BE; color:white;
+}
+
+.ref-word-dic-input {
+    background-color:#628066; color:white;
+}
+
+.ref-name-dic-input {
+    background-color:#A3C97B; color:white;
+}*/
+
+.icon-lightgray {
+    color:lightgray;
+}
+.icon-lightgray:hover {
+    color:grey;
+}
+
+.icon-grey {
+    color:#515151;
+}
+
+/*마우스 오버 시 색상이 변하는 icon 색상 타입*/
+.icon-grey-hover {
+    color:#515151;
+}
+.icon-grey-hover:hover {
+    color:#8e8e8e;
+}
+
+.icon-orange {
+    color:orange;
+}
+
+.icon-white {
+    color:white;
+}
+
+.sql-span-button {
+    background-color:white;
+    color:#6a9ca7;
+}
+
+.sql-span-button:hover {
+    background-color:#6a9ca7;
+    color:white;
+ }
+
+.notice-span-button {
+    cursor:pointer;
+    background-color:#F1F1F1;
+    color:orange;
+    font-size:12px;
+}
+.notice-span-button:hover {
+    background-color:orange;
+    color:#F1F1F1;
+    font-size:12px;
+}
+
+/* 팝업 모달 관련 스타일 */
+.modal {
+  text-align: center;
+  padding: 0!important;
+}
+
+.modal:before {
+  content: '';
+  display: inline-block;
+  height: 100%;
+  vertical-align: middle;
+  margin-right: -4px; /* Adjusts for spacing */
+}
+
+.modal .modal-dialog 
+{ 
+  width: 450px; 
+  display: inline-block;
+  text-align: left;
+  vertical-align: middle;
+}
+
+.set-information .modal-dialog 
+{ 
+  width: 305px; 
+  display: inline-block;
+  text-align: left;
+  vertical-align: middle;
+}
+
+.select-languages .modal-dialog {
+    width: 380px;
+    display: inline-block;
+    text-align: left;
+    vertical-align: middle;
+}
+
+.alert-popup .modal-dialog {
+    width: 450px;
+    display: inline-block;
+    text-align: left;
+    vertical-align: middle;
+}
+
+.erd-information .modal-dialog 
+{ 
+  width: 660px; 
+  display: inline-block;
+  text-align: left;
+  vertical-align: middle;
+}
+
+.reset-password .modal-dialog 
+{ 
+  width: 550px; 
+  display: inline-block;
+  text-align: left;
+  vertical-align: middle;
+}
+
+.set-fk .modal-dialog {
+    width: 600px;
+    display: inline-block;
+    text-align: left;
+    vertical-align: middle;
+}
+
+.create-test-data .modal-dialog {
+    width: 650px;
+    display: inline-block;
+    text-align: left;
+    vertical-align: middle;
+}
+
+
+.set-index .modal-dialog 
+{ 
+  width: 740px; 
+  display: inline-block;
+  text-align: left;
+  vertical-align: middle;
+}
+
+.input-text-popup .modal-dialog {
+    width: 640px;
+    display: inline-block;
+    text-align: left;
+    vertical-align: middle;
+}
+
+.readonly-erd .modal-dialog {
+    width: 640px;
+    display: inline-block;
+    text-align: left;
+    vertical-align: middle;
+}
+
+.service-user-management .modal-dialog {
+    width: 780px;
+    display: inline-block;
+    text-align: left;
+    vertical-align: middle;
+}
+
+.confirm-refund .modal-dialog {
+    width: 780px;
+    display: inline-block;
+    text-align: left;
+    vertical-align: middle;
+}
+
+.dic-erd-ref .modal-dialog {
+    width: 860px;
+    display: inline-block;
+    text-align: left;
+    vertical-align: middle;
+}
+
+.show-table .modal-dialog {
+    width: 960px;
+    display: inline-block;
+    text-align: left;
+    vertical-align: middle;
+}
+
+.select-erd .modal-dialog 
+{ 
+  width: 1000px; 
+  display: inline-block;
+  text-align: left;
+  vertical-align: middle;
+}
+
+.payment .modal-dialog {
+    width: 1100px;
+    display: inline-block;
+    text-align: left;
+    vertical-align: middle;
+}
+
+.admin-popup .modal-dialog {
+    width: 1200px;
+    display: inline-block;
+    text-align: left;
+    vertical-align: middle;
+}
+
+.create-sql .modal-dialog {
+    width: 1100px;
+    display: inline-block;
+    text-align: left;
+    vertical-align: middle;
+}
+
+.compare-erd .modal-dialog 
+{ 
+  width: 1540px; 
+  display: inline-block;
+  text-align: left;
+  vertical-align: middle;
+}
+
+.integrated-search .modal-dialog {
+    width: 1700px;
+    display: inline-block;
+    text-align: left;
+    vertical-align: middle;
+}
+
+/* 메뉴 1뎁스 글자 스타일 */
+.menu1depth-text {
+    font-family: 'Hoefler Text',Georgia,'Times New Roman',serif;
+    font-weight: normal;
+    font-size: 1.00em;
+    letter-spacing: 0.2em;
+    line-height: 1.1em;
+    margin: 0px;
+    text-align: center;
+    text-transform: uppercase;
+    color: #6a9ca7;
+    cursor: pointer;
+}
+
+/* 팝업 타이틀 글자 스타일 */
+/*.popup-title-text 
+{
+  font-family: 'Hoefler Text',Georgia,'Times New Roman',serif;
+  font-weight: normal;
+  font-size: 2.00em;
+  letter-spacing: 0.2em;
+  line-height: 1.1em;
+  margin: 0px;
+  text-align: center;
+  text-transform: uppercase;
+  color: #6a9ca7;
+}*/
+
+/* 팝업 내용 글자 스타일 */
+/*.popup-information-text 
+{
+  font-family: 'Hoefler Text',Georgia,'Times New Roman',serif;
+  font-weight: normal;
+  font-size: 1.00em;
+  letter-spacing: 0.0em;
+  line-height: 1.1em;
+  margin: 0px;
+  text-align: center;
+  text-transform: uppercase;
+  color: #6a9ca7;
+}*/
+
+/* 테이블 추가 안내 글자 스타일 */
+.table-add-information-text 
+{
+  font-family: 'Hoefler Text',Georgia,'Times New Roman',serif;
+  font-weight: normal;
+  font-size: 2.00em;
+  letter-spacing: 0.2em;
+  line-height: 1.1em;
+  margin: 0px;
+  text-align: center;
+  text-transform: uppercase;
+  color: #6a9ca7;
+}
+
+.aquery-information-text
+{
+  font-family: 'Hoefler Text',Georgia,'Times New Roman',serif;
+  font-weight: normal;
+  font-size: 1.00em;
+  letter-spacing: 0.2em;
+  line-height: 1.1em;
+  margin: 0px;
+  text-align: left;
+  text-transform: uppercase;
+  color: #6a9ca7;
+  margin-top:10px;
+}
+
+
+/* 푸터 글자 스타일 
+    font-family: 'Hoefler Text',Georgia,'Times New Roman',serif;
+*/
+.footer-text 
+{
+  font-weight: normal;
+  font-size: 0.80em;
+  letter-spacing: 0.2em;
+  line-height: 1.1em;
+  margin-bottom: 5px;
+  text-align: center;
+  text-transform: none;
+  color: #6a9ca7;
+}
+
+/* 탑 메뉴의 오른쪽 버튼 글자 스타일 */
+.menu1depth-rightside-text 
+{
+  font-family: 'Hoefler Text',Georgia,'Times New Roman',serif;
+  font-weight: normal;
+  font-size: 0.70em;
+  letter-spacing: 0.2em;
+  line-height: 1.1em;
+  margin: 0px;
+  text-align: center;
+  text-transform: uppercase;
+  color: #6a9ca7;
+  cursor:pointer;
+  margin-right:20px;
+  vertical-align:top;
+}
+
+.menu1depth-rightside-text:hover
+{
+  color: orange;
+ }
+
+.menu1depth-rightside-span-border {
+    border: 1px solid #6a9ca7;
+    border-radius: 40%;
+    padding: 3px 5px;
+}
+
+.menu1depth-rightside-span-border:hover {
+    border-color: orange;
+}
+
+
+/* AQuery 페널 뒷쪽 배경 */
+.aquery-panel-back-area
+{
+    background-image: url('/images/background/background.jpg');
+    width:100%;
+    height:100%;
+}
+
+
+.aquery-panel-back-area2 {
+    /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#f6f6f6+0,eaeaea+100,207cca+100,7db9e8+100 */
+    background: #f6f6f6; /* Old browsers */
+    background: -moz-linear-gradient(top,  #f6f6f6 0%, #eaeaea 100%, #207cca 100%, #7db9e8 100%); /* FF3.6-15 */
+    background: -webkit-linear-gradient(top,  #f6f6f6 0%,#eaeaea 100%,#207cca 100%,#7db9e8 100%); /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(to bottom,  #f6f6f6 0%,#eaeaea 100%,#207cca 100%,#7db9e8 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f6f6f6', endColorstr='#7db9e8',GradientType=0 ); /* IE6-9 */
+}
+
+/* invalid input 스타일 */
+.ng-invalid.ng-dirty {
+  border-color: red;
+  outline-color: red;
+}
+
+/* 고정간격 글꼴로 설정 */
+textarea  
+{  
+   font-family:"Courier New";
+   font-size: 14px;   
+}
+
+.text-trimming {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    text-align: left;
+    white-space: nowrap;
+}
+
+.verticalLine {
+    border-left: 1px solid #D2D2D2;
+    margin: 5px 10px 5px 0px;    
+}
+
+.fixed-aquery-top-control-panel {
+    position:fixed;top:50px;left:10px;
+    display:flex;height:30px;background-color:#F1F1F1;border:1px solid #D2D2D2;
+    z-index:5000;
+}
+
+.absolute-aquery-top-control-panel {
+    position:absolute;top:50px;left:10px;
+    display:flex;height:30px;background-color:#F1F1F1;border:1px solid #D2D2D2;
+    z-index:5000;
+}
+
+.fixed-aquery-jobinfo-bottom-control-panel {
+    position:fixed;top:91px;left:10px;
+    background-color:white;border:1px solid #D2D2D2;
+    z-index:4000;
+}
+
+.absolute-aquery-jobinfo-bottom-control-panel {
+    position:absolute;top:800px;left:10px;
+    background-color:white;border:1px solid #D2D2D2;
+    z-index:4000;
+}
+
+/*Bootstrap table 내부의 td의 스타일 설정*/
+.table>thead>tr>td, .table>tbody>tr>td, .table>tfoot>tr>td{
+    padding: 3px 0px 0px 5px;
+    height:35px;
+    vertical-align:middle;
+}
+
+/*Bootstrap table 제목 Row 글자색 설정*/
+.table>thead>tr>th {
+    color:grey;
+}
+
+/*Setting Table Layout 테이블용 스타일*/
+.set-layout-table>thead>tr>td, .set-layout-table>tbody>tr>td, .set-layout-table>tfoot>tr>td{
+    margin:0px;
+    padding: 3px 0px 0px 5px;
+    height:20px;
+}
+
+.column-type-fontsize1 {
+    font-size:11px;
+}
+
+.column-type-fontsize2 {
+    font-size:12px;
+}
+
+/*구글 로그인 버튼 스타일 커스터마이징 관련*/
+#googleCustomBtn span {
+    width:175px;
+    height:40px;
+    cursor:pointer;
+    background-size: cover;
+    position:absolute;
+}
+.googleSignInButton {
+    background: transparent url('/images/login-button/googole-login.png') no-repeat left top;
+}
+
+.top-menu-hr {
+    margin:0px;padding:0px;height:1px;border-top: 1px solid #ccc;
+}
+
+.btn-group > button {
+    border-radius:0;width:100px;color:#515151;
+}
+
+.dropdown-menu > li > a {
+    font-size:12px; color:#515151;
+}
+
+/*모든 컬럼 보기 그리드의 제목 div. display:flex이면서 전체 아이템이 가운데로 정렬되는 것이 특정*/
+.all-column-panel-header-cell {
+    display:flex;padding:7px 0px 0px 0px;align-items:center;justify-content:center;height:20px;
+}
+
+.all-column-panel-h6 {
+    margin:0px;
+}
+
+/*가로 선 마진 설정*/
+hr.myhrline{
+     margin-right: 13px;
+}
+
+/*마진 없는 가로 선*/
+hr.nomarginline{
+    height:1px;
+    margin: 0px;
+}
+
+/*세로선*/
+.vertical-line {
+    flex: 33;
+    border-left: 1px solid #DDDDDD;
+}
+
+path{
+    pointer-events:visibleStroke visibleFill;
+}
+
+table {
+    table-layout: auto;
+    border-collapse: collapse;
+    width: 100%;
+}
+
+table td {
+    border: 1px solid #ccc;
+}
+
+table td p {
+    margin-left:5px;margin-top:5px;margin-right:5px;margin-bottom:5px;min-width:85px;font-size:12px;
+}
+
+.table-td-p-center {
+    text-align:center;margin-left:5px;margin-top:5px;margin-right:5px;margin-bottom:5px;min-width:90px;font-size:12px;
+}
+
+table .absorbing-column {
+    width: 50%;
+}
+
+
+/*아래 정렬 div들의 부모 div*/
+.div-align-parent {
+    display: flex;
+    justify-content: space-between;
+}
+
+/*div 왼쪽 정렬*/
+.div-align-left {
+    float: left;
+    width: 33.33333%;
+    text-align: left;
+}
+
+/*div 가운데 정렬*/
+.div-align-center {
+    float: left;
+    width: 33.33333%;
+    text-align: center;
+}
+
+/*div 오른쪽 정렬*/
+.div-align-right {
+    float: left;
+    width: 33.33333%;
+    text-align: right;
+}
+
+/*number input disabled 상태일 때 배경 색상*/
+/*input[type="number"]:disabled {
+    background: #dddddd;
+}
+*/
+
+input[type=number]:disabled {
+    background-color: #dddddd;
+}
+
+input[type=text]:disabled {
+    background-color: #dddddd;
+}
+
+/*비용 정보 테이블에서 셀 td 스타일*/
+.price-td {
+    border: 1px solid #FFFFFF;
+}
+
+.price-td > P {
+    text-align: left;
+}
+
+/*비용 정보 테이블에서 헤더 td 스타일*/
+.price-td-header {
+    border: 1px solid #FFFFFF;
+}
+
+/*비용 정보 테이블에서 헤더 td의 글자 스타일*/
+.price-td-header > P {
+    font-weight: bold;
+    text-align: left;
+}
+
+.text-align-center {
+    text-align: center;
+}
+
+.text-align-right {
+    text-align: right;
+}
+
+.th-label {
+    font-weight: bold;
+}
+
+.td-label {
+    font-weight: normal;
+    text-align: center;
+}
+
+/* td 컨텐츠에 넓이 맞춤*/
+.fit-td {
+    width: 1%;
+    white-space: nowrap;
+}
+
+.select-table-row {
+    background-color: #28A4C9;
+    color: white;
+}
+
+/*서비스 요금 테이블 표의 셀의 div 스타일*/
+.service-price-table-td-div-left {
+    text-align: left;
+    margin-left: 20px;
+    vertical-align: middle;
+}
+
+.service-price-table-td-div-right {
+    text-align: right;
+    margin-right: 50px;
+    vertical-align: middle;
+}
+
+.service-price-table-td-div-center {
+    text-align: center;
+    vertical-align: middle;
+}
+
+/*높이가 늘어나는 부모 div의 가운데 위치할 자식 div. 
+  부모 div의 경우 display:inline-block 스타일 필요*/
+.center-content {
+    position: relative;
+    top: 40%;
+    transform: translateY(-50%);
+    text-align: center;
+}
+
+/*마우스 드래그로 순서를 변경할 수 있는 목록의 아이템 스타일. drag-arrange.js 관련*/
+.draggable-element {
+    display: inline-block;
+    height: 30px;
+    line-height:30px;
+    min-width: 60px;
+    background: white;
+    background-color: white;
+    border: 1px solid rgb(196, 196, 196);
+    text-align: center;
+    margin: 0px 10px 0px 0px;
+    padding: 0px 10px 0px 10px;
+    color: rgb(51, 51, 51);
+    font-size: 17px;
+    cursor: move;
+    user-select: none;
+}
+
+/*sort를 위한 테이블 헤더 td의 자식 div 스타일*/
+.table-header-with-sort-div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.erd-history-text {
+    color: black;
+    font-size:13px;
+    font-weight:bold;
+}
+
+/*파일 업로드 관련*/
+.drop-zone {
+    border-radius: 6px;
+    cursor: pointer;
+    background-color: #f9f9f9;
+}
+
+.drop-zone.dragover {
+    background-color: #e6f7ff;
+    border-color: #1890ff;
+}
+
+.file-drop-container.drag-over {
+    background-color: #f0f8ff; /* 원하는 색상으로 변경 */
+    border-color: #3399ff; /* 테두리 강조 */
+}
+
+.menu-icon-text {
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    line-height: 20px;
+    text-align: center;
+    border-radius: 3px;
+    margin-right: 6px;
+    font-weight: bold;
+    color: white;
+    font-family: 'Arial', sans-serif;
+    font-size: 12px;
+}
+
+.menu-icon-text.T {
+    background-color: #6989B3;
+}
+
+.menu-icon-text.W {
+    background-color: #628066;
+}
+    
+.menu-icon-text.N {
+    background-color: #A3C97B;
+}
+
+
+/*angularjs ui-grid 높이 자동 설정 관련*/
+/*.ui-grid-viewport .ui-grid-cell-contents {
+    word-wrap: break-word;
+    white-space: normal !important;
+}
+
+.ui-grid-row, .ui-grid-cell {
+    height: auto !important;
+}
+
+.ui-grid-row div[role=row] {
+    display: flex;
+    align-content: stretch;
+}*/
+
+
